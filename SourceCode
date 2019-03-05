@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio.h>
+#include <windows.h>
+#include <dos.h>
+using namespace std;
+
+int main()
+{
+ system("color 0a");
+ cout<<"\n\n\n\t\t\t\tPlease wait while loading\n\n";
+ char a=177, b=219;
+ cout<<"\t\t\t\t";
+ for (int i=0;i<=15;i++)
+ cout<<a;
+ cout<<"\r";
+ cout<<"\t\t\t\t";
+ for (int i=0;i<=15;i++)
+ {
+  cout<<b;
+  for (int j=0;j<=1e8;j++); //You can also use sleep function instead of for loop
+ }
+
+ system ("CLS");
+ cout<<"BY NAUMAN IFTIKHAR SATTI: ";
+ 
+ getch();
+}
